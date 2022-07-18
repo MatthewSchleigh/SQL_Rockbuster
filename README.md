@@ -4,10 +4,9 @@
 ## CareerFoundry Data Analytics Course 
 
 ### **Objectives:** 
-Develop an analysis through statistical and descriptive techniques
-Demonstrate a proficiency with SQL and Tableau. 
+  1. Develop an analysis through statistical and descriptive techniques
+  2. Demonstrate a proficiency with SQL and Tableau. 
   
-*Rockbuster Stealth is a fictional company, whose data has been supplied by CareerFoundry.*
 
 ### **Scenario:**
 In preparation for an annual company strategy meeting, I was tasked to answer the following questions:
@@ -17,8 +16,10 @@ In preparation for an annual company strategy meeting, I was tasked to answer th
   4. Where are customers with a high lifetime value based?
   5. Do sales figures vary between geographic regions?
 
-### **PostgreSQL** was used to perform data queries.
+
 The data set contains multiple tables containing observations pertaining to 
   customers, payments, rentals, employees, stores, films, and inventories, among other variables.
-  
+*Rockbuster Stealth is a fictional company, whose data has been supplied by CareerFoundry.*
+
+### **PostgreSQL** was used to perform data queries.
 ### **Tableau** was used to visualize results of my analysis.
