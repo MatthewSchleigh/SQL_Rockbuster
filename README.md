@@ -4,8 +4,8 @@
 ## CareerFoundry Data Analytics Course 
 
 **Objectives:** 
-  Develop an analysis through statistical and descriptive techniques
-  Demonstrate a proficiency with SQL and Tableau. 
+Develop an analysis through statistical and descriptive techniques
+Demonstrate a proficiency with SQL and Tableau. 
   
 *Rockbuster Stealth is a fictional company, whose data has been supplied by CareerFoundry.*
 
