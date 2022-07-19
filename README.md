@@ -25,3 +25,5 @@ The data set contains multiple tables containing observations pertaining to
 ## **Tools**
 - PostgreSQL
 - Tableau 
+
+### Check this page for a link to the full project on Tableau
