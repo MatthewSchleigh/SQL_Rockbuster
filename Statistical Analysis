@@ -1,0 +1,30 @@
+Write statistical queries in PostgreSQL
+
+/* Determine Mean, Min, and Max values for continuous rental values */
+
+SELECT e.name AS genre,           -- rename variables for ease of reading
+    SUM(amount) AS total_paid,
+    ROUND (AVG(amount),2) AS average_paid,
+    MAX(amount) AS maximum_paid,
+    MIN(amount) AS minimum_paid,
+
+    ROUND (AVG(f.rental_duration),2) AS average_rental_duration,
+    MAX(f.rental_duration) AS maximum_rental_duration,
+    MIN(f.rental_duration) AS minimum_rental_duration, 
+  
+    ROUND (AVG(f.rental_rate),2) AS average_rental_rate,
+    MAX(f.rental_rate) AS maximum_rental_rate,
+    MIN(f.rental_rate) AS minimum_rental_rate,
+    
+    ROUND (AVG(f.length),2) AS average_length
+    MAX(f.length) AS maximum_length,
+    MIN(f.length) AS minimum_length,  
+  
+  FROM payment A
+  RIGHT JOIN rental B ON a.rental_id = b.rental_id
+  RIGHT JOIN inventory C ON b.inventory_id = c.inventory_id
+  RIGHT JOIN film_category D ON c.film_id = d.film_id
+  RIGHT JOIN category E ON d.category_id = e.category_id
+  INNER JOIN film F ON c.film_id = f.film_id
+  GROUP BY genre
+  ORDER BY genre, total_paid DESC
